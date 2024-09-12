@@ -39,7 +39,7 @@ public partial class History
 
     public virtual Encounter Encounter { get; set; } = null!;
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual PatientData Patient { get; set; } = null!;
 
     public virtual User? UpdatedByNavigation { get; set; }
 }

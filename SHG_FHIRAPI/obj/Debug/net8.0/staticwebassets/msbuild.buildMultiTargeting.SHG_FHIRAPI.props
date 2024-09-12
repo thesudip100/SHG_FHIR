@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SHG_FHIRAPI.props" />
+</Project>

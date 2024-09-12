@@ -83,7 +83,7 @@ public partial class AntenatalCare
 
     public virtual User? CreatedByNavigation { get; set; }
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual PatientData Patient { get; set; } = null!;
 
     public virtual Pregnancy Pregnancy { get; set; } = null!;
 

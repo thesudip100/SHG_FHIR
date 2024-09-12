@@ -43,7 +43,7 @@ public partial class Pregnancy
 
     public virtual ICollection<HomeMotherPostnatalCare> HomeMotherPostnatalCares { get; set; } = new List<HomeMotherPostnatalCare>();
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual PatientData Patient { get; set; } = null!;
 
     public virtual ICollection<PostnatalCare> PostnatalCares { get; set; } = new List<PostnatalCare>();
 }

@@ -65,7 +65,7 @@ public partial class Delivery
 
     public virtual ICollection<DeliveryChild> DeliveryChildren { get; set; } = new List<DeliveryChild>();
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual PatientData Patient { get; set; } = null!;
 
     public virtual Pregnancy Pregnancy { get; set; } = null!;
 

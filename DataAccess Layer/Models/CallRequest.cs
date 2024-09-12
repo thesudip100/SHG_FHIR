@@ -25,7 +25,7 @@ public partial class CallRequest
 
     public virtual User? FromUser { get; set; }
 
-    public virtual Patient? Patient { get; set; }
+    public virtual PatientData? Patient { get; set; }
 
     public virtual User? ToUser { get; set; }
 }

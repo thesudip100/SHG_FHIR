@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "+GoHUjZ0axTp0neo033znkZPEmkzggBQxIcCIvEUqR0=",
+  "Source": "SHG_FHIRAPI",
+  "BasePath": "_content/SHG_FHIRAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

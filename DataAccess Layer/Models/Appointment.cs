@@ -51,7 +51,7 @@ public partial class Appointment
 
     public virtual HealthFacility? Facility { get; set; }
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual PatientData Patient { get; set; } = null!;
 
     public virtual Pregnancy? Pregnancy { get; set; }
 

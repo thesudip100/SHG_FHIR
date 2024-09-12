@@ -37,7 +37,7 @@ public partial class ImmunizationHistory
 
     public virtual User? CreatedByNavigation { get; set; }
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual PatientData Patient { get; set; } = null!;
 
     public virtual User? UpdatedByNavigation { get; set; }
 }

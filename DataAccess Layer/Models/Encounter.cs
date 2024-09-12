@@ -53,7 +53,7 @@ public partial class Encounter
 
     public virtual ICollection<Medication> Medications { get; set; } = new List<Medication>();
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual PatientData Patient { get; set; } = null!;
 
     public virtual ICollection<PhysicalExamination> PhysicalExaminations { get; set; } = new List<PhysicalExamination>();
 

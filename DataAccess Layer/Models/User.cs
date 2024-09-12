@@ -109,7 +109,7 @@ public partial class User
 
     public virtual ICollection<PasswordReset> PasswordResets { get; set; } = new List<PasswordReset>();
 
-    public virtual ICollection<Patient> Patients { get; set; } = new List<Patient>();
+    public virtual ICollection<PatientData> Patients { get; set; } = new List<PatientData>();
 
     public virtual ICollection<PhysicalExamination> PhysicalExaminationCreatedByNavigations { get; set; } = new List<PhysicalExamination>();
 

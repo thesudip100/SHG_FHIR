@@ -33,5 +33,5 @@ public partial class ChildImmunization
 
     public virtual ICollection<ImmunizationHistory> ImmunizationHistories { get; set; } = new List<ImmunizationHistory>();
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual PatientData Patient { get; set; } = null!;
 }

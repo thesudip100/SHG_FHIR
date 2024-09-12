@@ -49,7 +49,7 @@ public partial class HealthFacility
 
     public virtual ICollection<Encounter> Encounters { get; set; } = new List<Encounter>();
 
-    public virtual ICollection<Patient> Patients { get; set; } = new List<Patient>();
+    public virtual ICollection<PatientData> Patients { get; set; } = new List<PatientData>();
 
     public virtual ICollection<Pregnancy> Pregnancies { get; set; } = new List<Pregnancy>();
 

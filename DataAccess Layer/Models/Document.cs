@@ -29,5 +29,5 @@ public partial class Document
 
     public virtual Encounter? Encounter { get; set; }
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual PatientData Patient { get; set; } = null!;
 }

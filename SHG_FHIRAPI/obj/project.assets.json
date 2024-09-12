@@ -1072,6 +1072,19 @@
         "runtime": {
           "bin/placeholder/DataAccess Layer.dll": {}
         }
+      },
+      "Infrastructure Layer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DataAccess Layer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure Layer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure Layer.dll": {}
+        }
       }
     }
   },
@@ -3066,12 +3079,18 @@
       "type": "project",
       "path": "../DataAccess Layer/DataAccess Layer.csproj",
       "msbuildProject": "../DataAccess Layer/DataAccess Layer.csproj"
+    },
+    "Infrastructure Layer/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure Layer/Infrastructure Layer.csproj",
+      "msbuildProject": "../Infrastructure Layer/Infrastructure Layer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "DataAccess Layer >= 1.0.0",
       "Hl7.Fhir.R4 >= 5.10.0",
+      "Infrastructure Layer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
@@ -3113,6 +3132,9 @@
           "projectReferences": {
             "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj": {
               "projectPath": "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj"
+            },
+            "D:\\SHG_FHIRAPI\\Infrastructure Layer\\Infrastructure Layer.csproj": {
+              "projectPath": "D:\\SHG_FHIRAPI\\Infrastructure Layer\\Infrastructure Layer.csproj"
             }
           }
         }

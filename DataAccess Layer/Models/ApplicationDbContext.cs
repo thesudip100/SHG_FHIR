@@ -65,7 +65,7 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<PasswordReset> PasswordResets { get; set; }
 
-    public virtual DbSet<Patient> Patients { get; set; }
+    public virtual DbSet<PatientData> Patients { get; set; }
 
     public virtual DbSet<PhysicalExamination> PhysicalExaminations { get; set; }
 
@@ -1195,7 +1195,7 @@ public partial class ApplicationDbContext : DbContext
                 .HasConstraintName("PasswordReset_userId_fkey");
         });
 
-        modelBuilder.Entity<Patient>(entity =>
+        modelBuilder.Entity<PatientData>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("Patient_pkey");
 
