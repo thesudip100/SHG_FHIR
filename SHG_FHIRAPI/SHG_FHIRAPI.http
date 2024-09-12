@@ -1,0 +1,6 @@
+@SHG_FHIRAPI_HostAddress = http://localhost:5111
+
+GET {{SHG_FHIRAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
