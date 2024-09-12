@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SHG_FHIRAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db0452893dd6f667c8a2a3fc59ac63108b04d0c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3277df99849327583a1d883bca1b77ec2af7c5f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SHG_FHIRAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SHG_FHIRAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
