@@ -52,6 +52,51 @@ namespace Infrastructure_Layer
             return patient;
         }
 
+        public static Practitioner ConvertToFhirPractitioner(User data)
+        {
+            var practitioner = new Practitioner
+            {
+                Id = Convert.ToString(data.Id),
+                Name = new List<HumanName>
+                {
+                    new HumanName
+                    {
+                        FamilyElement = new FhirString
+                        {
+                            Value = data.LastName
+                        },
+                        UseElement = new Code<HumanName.NameUse>
+                        {
+                            Value = HumanName.NameUse.Official
+                        },
+                        GivenElement = new List<FhirString>
+                        {
+                            new FhirString
+                            {
+                                Value = data.FirstName
+                            }
+                        }
+                    }
+                },
+                Active = null,
+                Telecom = new List<ContactPoint>
+                {
+                new ContactPoint
+                {
+                    System = ContactPoint.ContactPointSystem.Phone,
+                    Value = data.PhoneNumber,
+                },
+                new ContactPoint
+                {
+                     System= ContactPoint.ContactPointSystem.Email,
+                    Value= data.Email
+                }
+            }
+            };
+
+            return practitioner;
+        }
+
         public static AdministrativeGender GetGender(string gender)
         {
 
