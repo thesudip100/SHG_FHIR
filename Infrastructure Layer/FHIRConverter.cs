@@ -1,11 +1,18 @@
 ﻿using DataAccess_Layer.Models;
 using Hl7.Fhir.Model;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace Infrastructure_Layer
 {
     public class FHIRConverter
     {
+        private readonly ApplicationDbContext dbContext;
+
+        public FHIRConverter(ApplicationDbContext dbContext)
+        {
+            this.dbContext = dbContext;
+        }
         public static Patient ConvertToFhirPatient(PatientData data)
         {
             var nameParts = data.Name?.Split(' ', 2);
@@ -50,6 +57,75 @@ namespace Infrastructure_Layer
 
 
             return patient;
+        }
+
+        public static Practitioner ConvertToFhirPractitioner(User data)
+        {
+            var practitioner = new Practitioner
+            {
+                Id = Convert.ToString(data.Id),
+                Name = new List<HumanName>
+                {
+                    new HumanName
+                    {
+                        FamilyElement = new FhirString
+                        {
+                            Value = data.LastName
+                        },
+                        UseElement = new Code<HumanName.NameUse>
+                        {
+                            Value = HumanName.NameUse.Official
+                        },
+                        GivenElement = new List<FhirString>
+                        {
+                            new FhirString
+                            {
+                                Value = data.FirstName
+                            }
+                        }
+                    }
+                },
+                Active = null,
+                Telecom = new List<ContactPoint>
+                {
+                new ContactPoint
+                {
+                    System = ContactPoint.ContactPointSystem.Phone,
+                    Value = data.PhoneNumber,
+                },
+                new ContactPoint
+                {
+                     System= ContactPoint.ContactPointSystem.Email,
+                    Value= data.Email
+                }
+            }
+            };
+
+            return practitioner;
+        }
+
+
+        public DiagnosticReport ConvertToFhirDiagnosticReport(ConfirmDiagnosis diagnosis)
+        {
+            var encounter = dbContext.Encounters.FirstOrDefault(e => e.Id == diagnosis.EncounterId);
+            var patient = dbContext.Patients.FirstOrDefault(p => p.Id == diagnosis.PatientId);
+
+            var diagnosisreport = new DiagnosticReport
+            {
+                Id = Convert.ToString(diagnosis.Id),
+                Encounter = new ResourceReference
+                {
+                    Reference = $"Encounter/{diagnosis.EncounterId}",
+                    Display = encounter?.Reason
+                },
+                Conclusion = diagnosis.Description,
+                Subject = new ResourceReference
+                {
+                    Reference = $"Patient/{diagnosis.PatientId}",
+                    Display = patient?.Name
+                }
+            };
+            return diagnosisreport;
         }
 
         public static AdministrativeGender GetGender(string gender)
