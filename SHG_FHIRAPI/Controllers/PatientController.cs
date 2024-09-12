@@ -32,7 +32,8 @@ namespace SHG_FHIRAPI.Controllers
 
             // Serialize to JSON in FHIR-compliant format
             return Content(fhirPatient.ToJson(), "application/fhir+json");
-            /* return Content(fhirPatient.ToString(Newtonsoft.Json.Formatting.None), "application/fhir+json");*/
+            /* return Content(fhirPatient.ToString(Newtonsoft.Json.Formatting.None), "application/fhir+json");*/  
+            //hello
         }
 
 
