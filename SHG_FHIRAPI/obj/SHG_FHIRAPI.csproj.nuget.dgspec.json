@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SHG_FHIR\\SHG_FHIRAPI\\SHG_FHIRAPI.csproj": {}
+    "D:\\SHG_FHIRAPI\\SHG_FHIRAPI\\SHG_FHIRAPI.csproj": {}
   },
   "projects": {
-    "D:\\SHG_FHIR\\DataAccess Layer\\DataAccess Layer.csproj": {
+    "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SHG_FHIR\\DataAccess Layer\\DataAccess Layer.csproj",
+        "projectUniqueName": "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj",
         "projectName": "DataAccess Layer",
-        "projectPath": "D:\\SHG_FHIR\\DataAccess Layer\\DataAccess Layer.csproj",
-        "packagesPath": "C:\\Users\\PERCOIDIT\\.nuget\\packages\\",
-        "outputPath": "D:\\SHG_FHIR\\DataAccess Layer\\obj\\",
+        "projectPath": "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj",
+        "packagesPath": "C:\\Users\\PERCOIDITT\\.nuget\\packages\\",
+        "outputPath": "D:\\SHG_FHIRAPI\\DataAccess Layer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PERCOIDIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PERCOIDITT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,17 +94,20 @@
         }
       }
     },
-    "D:\\SHG_FHIR\\Infrastructure Layer\\Infrastructure Layer.csproj": {
+    "D:\\SHG_FHIRAPI\\Infrastructure Layer\\Infrastructure Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SHG_FHIR\\Infrastructure Layer\\Infrastructure Layer.csproj",
+        "projectUniqueName": "D:\\SHG_FHIRAPI\\Infrastructure Layer\\Infrastructure Layer.csproj",
         "projectName": "Infrastructure Layer",
-        "projectPath": "D:\\SHG_FHIR\\Infrastructure Layer\\Infrastructure Layer.csproj",
-        "packagesPath": "C:\\Users\\PERCOIDIT\\.nuget\\packages\\",
-        "outputPath": "D:\\SHG_FHIR\\Infrastructure Layer\\obj\\",
+        "projectPath": "D:\\SHG_FHIRAPI\\Infrastructure Layer\\Infrastructure Layer.csproj",
+        "packagesPath": "C:\\Users\\PERCOIDITT\\.nuget\\packages\\",
+        "outputPath": "D:\\SHG_FHIRAPI\\Infrastructure Layer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PERCOIDIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PERCOIDITT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -116,8 +122,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SHG_FHIR\\DataAccess Layer\\DataAccess Layer.csproj": {
-                "projectPath": "D:\\SHG_FHIR\\DataAccess Layer\\DataAccess Layer.csproj"
+              "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj": {
+                "projectPath": "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj"
               }
             }
           }
@@ -156,17 +162,20 @@
         }
       }
     },
-    "D:\\SHG_FHIR\\SHG_FHIRAPI\\SHG_FHIRAPI.csproj": {
+    "D:\\SHG_FHIRAPI\\SHG_FHIRAPI\\SHG_FHIRAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SHG_FHIR\\SHG_FHIRAPI\\SHG_FHIRAPI.csproj",
+        "projectUniqueName": "D:\\SHG_FHIRAPI\\SHG_FHIRAPI\\SHG_FHIRAPI.csproj",
         "projectName": "SHG_FHIRAPI",
-        "projectPath": "D:\\SHG_FHIR\\SHG_FHIRAPI\\SHG_FHIRAPI.csproj",
-        "packagesPath": "C:\\Users\\PERCOIDIT\\.nuget\\packages\\",
-        "outputPath": "D:\\SHG_FHIR\\SHG_FHIRAPI\\obj\\",
+        "projectPath": "D:\\SHG_FHIRAPI\\SHG_FHIRAPI\\SHG_FHIRAPI.csproj",
+        "packagesPath": "C:\\Users\\PERCOIDITT\\.nuget\\packages\\",
+        "outputPath": "D:\\SHG_FHIRAPI\\SHG_FHIRAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PERCOIDIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PERCOIDITT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -181,11 +190,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SHG_FHIR\\DataAccess Layer\\DataAccess Layer.csproj": {
-                "projectPath": "D:\\SHG_FHIR\\DataAccess Layer\\DataAccess Layer.csproj"
+              "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj": {
+                "projectPath": "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj"
               },
-              "D:\\SHG_FHIR\\Infrastructure Layer\\Infrastructure Layer.csproj": {
-                "projectPath": "D:\\SHG_FHIR\\Infrastructure Layer\\Infrastructure Layer.csproj"
+              "D:\\SHG_FHIRAPI\\Infrastructure Layer\\Infrastructure Layer.csproj": {
+                "projectPath": "D:\\SHG_FHIRAPI\\Infrastructure Layer\\Infrastructure Layer.csproj"
               }
             }
           }

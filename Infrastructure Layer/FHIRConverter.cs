@@ -1,4 +1,4 @@
-﻿using DataAccess_Layer.Models;
+using DataAccess_Layer.Models;
 using Hl7.Fhir.Model;
 using Microsoft.EntityFrameworkCore;
 using System.Text.RegularExpressions;
@@ -221,3 +221,4 @@ namespace Infrastructure_Layer
         }
     }
 }
+
