@@ -51,7 +51,7 @@ public partial class Encounter
 
     public virtual ICollection<LabTest> LabTests { get; set; } = new List<LabTest>();
 
-    public virtual ICollection<Medication> Medications { get; set; } = new List<Medication>();
+    public virtual ICollection<MedicationData> Medications { get; set; } = new List<MedicationData>();
 
     public virtual PatientData Patient { get; set; } = null!;
 

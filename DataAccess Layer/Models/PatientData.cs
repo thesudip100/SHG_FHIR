@@ -91,7 +91,7 @@ public partial class PatientData
 
     public virtual ICollection<LabTest> LabTests { get; set; } = new List<LabTest>();
 
-    public virtual ICollection<Medication> Medications { get; set; } = new List<Medication>();
+    public virtual ICollection<MedicationData> Medications { get; set; } = new List<MedicationData>();
 
     public virtual ICollection<PhysicalExamination> PhysicalExaminations { get; set; } = new List<PhysicalExamination>();
 

@@ -1,6 +1,7 @@
 ﻿using DataAccess_Layer.Models;
 using Hl7.Fhir.Model;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 
 
 namespace Infrastructure_Layer
@@ -128,6 +129,80 @@ namespace Infrastructure_Layer
             };
             return diagnosisreport;
         }
+
+        public Medication ConvertToFhirMedication(MedicationData meds)
+        {
+            var patient = dbContext.Patients.FirstOrDefault(p => p.Id == meds.PatientId);
+            var encounter = dbContext.Encounters.FirstOrDefault(e => e.Id == meds.EncounterId);
+
+
+            int numericPart = 0;
+            string characterPart = string.Empty;
+
+            string dosage = meds.Dosage;
+
+
+            var numericMatch = Regex.Match(dosage, @"\d+").Value;
+            var characterMatch = Regex.Match(dosage, @"[a-zA-Z]+").Value;
+
+            if (!string.IsNullOrEmpty(numericMatch))
+            {
+                numericPart = int.Parse(numericMatch);
+            }
+
+            characterPart = characterMatch;
+
+            /*string dosage = meds.Dosage;
+            int index = 0;
+            while(index<dosage.Length && char.IsDigit(dosage[index]))
+            {
+                index++;
+            }
+
+            int number = Convert.ToInt(dosage.Substring(0, index));
+            string character = dosage.Substring(index);*/
+            var medication = new Medication
+            {
+                Id = Convert.ToString(meds.Id),
+                Form = new CodeableConcept
+                {
+                    Coding = new List<Coding>
+            {
+                new Coding{
+                    Display = meds.Type
+                }
+            }
+                },
+                Code = new CodeableConcept
+                {
+                    Coding = new List<Coding>
+            {
+                new Coding
+                {
+                    Display = meds.MedicineName
+                }
+            }
+                },
+                Ingredient = new List<Medication.IngredientComponent>
+        {
+            new Medication.IngredientComponent
+            {
+                Strength = new Ratio
+                {
+                    Numerator = new Quantity
+                    {
+                        Value = numericPart,
+                        Code = characterPart
+                    }
+                }
+            }
+           }
+            };
+
+            return medication;
+        }
+
+
 
         public static AdministrativeGender GetGender(string gender)
         {

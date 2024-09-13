@@ -2642,23 +2642,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PERCOIDITT\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\PERCOIDIT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj",
+      "projectUniqueName": "D:\\SHG_FHIR\\DataAccess Layer\\DataAccess Layer.csproj",
       "projectName": "DataAccess Layer",
-      "projectPath": "D:\\SHG_FHIRAPI\\DataAccess Layer\\DataAccess Layer.csproj",
-      "packagesPath": "C:\\Users\\PERCOIDITT\\.nuget\\packages\\",
-      "outputPath": "D:\\SHG_FHIRAPI\\DataAccess Layer\\obj\\",
+      "projectPath": "D:\\SHG_FHIR\\DataAccess Layer\\DataAccess Layer.csproj",
+      "packagesPath": "C:\\Users\\PERCOIDIT\\.nuget\\packages\\",
+      "outputPath": "D:\\SHG_FHIR\\DataAccess Layer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\PERCOIDITT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PERCOIDIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

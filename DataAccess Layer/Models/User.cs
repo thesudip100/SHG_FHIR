@@ -101,9 +101,9 @@ public partial class User
 
     public virtual ICollection<LabTest> LabTestUpdatedByNavigations { get; set; } = new List<LabTest>();
 
-    public virtual ICollection<Medication> MedicationCreatedByNavigations { get; set; } = new List<Medication>();
+    public virtual ICollection<MedicationData> MedicationCreatedByNavigations { get; set; } = new List<MedicationData>();
 
-    public virtual ICollection<Medication> MedicationUpdatedByNavigations { get; set; } = new List<Medication>();
+    public virtual ICollection<MedicationData> MedicationUpdatedByNavigations { get; set; } = new List<MedicationData>();
 
     public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
 

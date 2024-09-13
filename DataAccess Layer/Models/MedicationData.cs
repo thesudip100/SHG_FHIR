@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DataAccess_Layer.Models;
 
-public partial class Medication
+public partial class MedicationData
 {
     public int Id { get; set; }
 

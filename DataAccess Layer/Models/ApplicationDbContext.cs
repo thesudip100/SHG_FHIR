@@ -59,7 +59,7 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<LabTest> LabTests { get; set; }
 
-    public virtual DbSet<Medication> Medications { get; set; }
+    public virtual DbSet<MedicationData> Medications { get; set; }
 
     public virtual DbSet<Notification> Notifications { get; set; }
 
@@ -1080,7 +1080,7 @@ public partial class ApplicationDbContext : DbContext
                 .HasConstraintName("LabTest_updatedBy_fkey");
         });
 
-        modelBuilder.Entity<Medication>(entity =>
+        modelBuilder.Entity<MedicationData>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("Medication_pkey");
 
